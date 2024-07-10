@@ -7,9 +7,9 @@ Fetches Hot Wheels car data from the [Hot Wheels Fandom wiki](https://hotwheels.
 ### Prerequisites
 
 - Python 3.x
-- `pandas`
-- `requests`
-- `beautifulsoup4`
+- Pandas
+- Requests
+- BeautifulSoup4
 
 ### Installation
 

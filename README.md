@@ -29,6 +29,9 @@ Fetches Hot Wheels car data from the [Hot Wheels Fandom wiki](https://hotwheels.
     ```sh
     python3 main.py
     ```
+## Visualization
+
+You can visualize the saved Hot Wheels data using my [Hot Wheels Viewer](https://madman38.github.io/hotwheels-viewer) tool. This website uses the generated JSON file from this script and presents the messages in a sleek UI.
 
 ## License
 

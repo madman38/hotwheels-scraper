@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import time
+import sys
 
 def fetchHW(startyear: int = None, endyear: int = None):
     if not startyear or not endyear:
@@ -58,6 +59,8 @@ def fetchHW(startyear: int = None, endyear: int = None):
 
     end_time = time.time()
     print(f"\n>> data saved to {filename} ({end_time - start_time:.2f} seconds)")
+    input(">> Press Enter to exit...")
+    sys.exit()
 
 if __name__ == "__main__":
     print("============================\nHot Wheels Car Data Fetcher\n============================\n")

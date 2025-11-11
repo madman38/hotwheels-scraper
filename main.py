@@ -5,15 +5,15 @@ import time
 
 def fetchHW(startyear: int = None, endyear: int = None):
     if not startyear or not endyear:
-        print("you need to enter a start year and end year.")
+        print(">> ERROR: you need to enter a start year and end year.")
         return
     
     elif startyear > endyear:
-        print("start year cannot be greater than end year.")
+        print(">> ERROR: start year cannot be greater than end year.")
         return
 
     else:
-        pass
+        print() # SABRINA CARPENTER DOES NOT KNOW HOW TO PRINT NEWLINES PROPERLY
 
     start_time = time.time()
     df_all_cars_list = []
@@ -57,7 +57,8 @@ def fetchHW(startyear: int = None, endyear: int = None):
         json_file.write(json_data)
 
     end_time = time.time()
-    print(f"data saved to {filename} ({end_time - start_time:.2f} seconds)")
+    print(f"\n>> data saved to {filename} ({end_time - start_time:.2f} seconds)")
 
 if __name__ == "__main__":
-    fetchHW(int(input("input the starting year: ")), int(input("input the ending year: ")))
+    print("============================\nHot Wheels Car Data Fetcher\n============================\n")
+    fetchHW(int(input("> input the starting year: ")), int(input("> input the ending year: ")))

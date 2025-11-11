@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+import time
 
 def fetchHW(startyear: int = None, endyear: int = None):
     if not startyear or not endyear:
@@ -8,12 +9,13 @@ def fetchHW(startyear: int = None, endyear: int = None):
         return
     
     elif startyear > endyear:
-        print("start year cannot be greater than endyear.")
+        print("start year cannot be greater than end year.")
         return
 
     else:
         pass
 
+    start_time = time.time()
     df_all_cars_list = []
 
     for year in range(endyear-startyear+1):
@@ -54,7 +56,8 @@ def fetchHW(startyear: int = None, endyear: int = None):
     with open(filename, "w", encoding="utf-8") as json_file:
         json_file.write(json_data)
 
-    print(f"data saved to {filename}")
+    end_time = time.time()
+    print(f"data saved to {filename} ({end_time - start_time:.2f} seconds)")
 
 if __name__ == "__main__":
     fetchHW(int(input("input the starting year: ")), int(input("input the ending year: ")))

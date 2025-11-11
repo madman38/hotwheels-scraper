@@ -17,10 +17,11 @@ Fetches Hot Wheels car data from the [Hot Wheels Fandom wiki](https://hotwheels.
 
     ```sh
     git clone https://github.com/madman38/hotwheels-scraper
+    cd hotwheels-scraper
     ```
 2. Install the required dependencies:
     ```sh
-    pip install pandas requests beautifulsoup4
+    pip install -r requirements.txt
     ```
 
 3. Run the script:

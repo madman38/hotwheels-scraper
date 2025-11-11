@@ -1,6 +1,20 @@
 # Hot Wheels Data Scraper
 
-Fetches Hot Wheels car data from the [Hot Wheels Fandom wiki](https://hotwheels.fandom.com/wiki/Hot_Wheels) and saves it as a JSON file. [Click here](hotwheels_2011_2024_cars.json) for example output.
+Fetches Hot Wheels car data from the [Hot Wheels Fandom wiki](https://hotwheels.fandom.com/wiki/Hot_Wheels) and saves it as a JSON file.
+
+example output:
+```json
+[
+  {
+    "ToyID":"BDC80",
+    "ModelName":"LaFerrari",
+    "Series":"Speed Team, New Model",
+    "SeriesNumber":"8/10​",
+    "Photo":"https://static.wikia.nocookie.net/hotwheels/images/e/e7/LaFerarri_2014_new_model_red.jpg/revision/latest?cb=20140210183001",
+    "Year":2014
+  }
+]
+```
 
 ## Setup and Installation
 
